@@ -1,0 +1,47 @@
+{
+  "name": "shopping-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --max-old-space-size=32000 dist/index.js",
+    "dev": "node --max-old-space-size=32000 --inspect dist/index.js --hang",
+    "watch": "tsc -w",
+    "build": "tsc",
+    "lint": "eslint ./src --cache --report-unused-disable-directives --ext .ts",
+    "lint:fix": "eslint ./src --fix --cache --report-unused-disable-directives --ext .ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "big-json": "^3.2.0",
+    "cheerio": "^1.0.0-rc.12",
+    "fast-xml-parser": "^4.2.2",
+    "iconv-lite": "^0.6.3",
+    "jschardet": "^3.0.0",
+    "node-fetch": "^3.3.1",
+    "puppeteer": "^20.3.0",
+    "unzipper": "^0.10.14",
+    "zlib": "^1.0.5"
+  },
+  "devDependencies": {
+    "@total-typescript/ts-reset": "^0.4.2",
+    "@types/node": "^18.16.3",
+    "@types/unzipper": "^0.10.6",
+    "@types/xml2js": "^0.4.11",
+    "@typescript-eslint/eslint-plugin": "^5.59.7",
+    "eslint": "^8.41.0",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

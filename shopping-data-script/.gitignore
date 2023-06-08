@@ -1,0 +1,10 @@
+node_modules
+files
+.env
+dist
+output
+.eslintcache
+tsconfig.tsbuildinfo
+xml
+temp
+manual
